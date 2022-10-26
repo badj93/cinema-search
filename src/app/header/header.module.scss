@@ -1,0 +1,19 @@
+.container {
+  align-items: center;
+  background: var(--black);
+  display: flex;
+  height: 72px;
+  justify-content: space-between;
+  padding: 0 36px;
+
+  &Right {
+    align-items: center;
+    column-gap: 24px;
+    display: flex;
+
+    &Favorite {
+      color: var(--gray);
+      cursor: pointer;
+    }
+  }
+}
