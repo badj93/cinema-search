@@ -3,8 +3,12 @@ import {
   LinkProps as LinkRouteProps,
 } from 'react-router-dom';
 
-type LinkProps = Pick<LinkRouteProps, 'to' | 'children'>;
+type LinkProps = Pick<LinkRouteProps, 'to' | 'children' | 'className'>;
 
-export const Link = ({ to, children }: LinkProps) => {
-  return <LinkRoute to={to}>{children}</LinkRoute>;
+export const Link = ({ to, children, className = '' }: LinkProps) => {
+  return (
+    <LinkRoute className={className} to={to}>
+      {children}
+    </LinkRoute>
+  );
 };

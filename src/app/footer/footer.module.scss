@@ -1,5 +1,46 @@
-.footer {
+.container {
   background: var(--black);
+  font-family: 'RobotoLight';
   flex-shrink: 0;
-  height: 344px;
+  height: 276px;
+  padding: 0 var(--pd-left-cnt);
+
+  &SocialNetworks {
+    display: flex;
+    justify-content: center;
+    column-gap: 64px;
+    padding: 60px 0;
+
+    &Icon {
+      color: var(--gray);
+      cursor: pointer;
+      font-size: 24px;
+
+      &:hover {
+        color: var(--hover-gray);
+      }
+    }
+  }
+
+  &Nav {
+    display: flex;
+    justify-content: center;
+    column-gap: 64px;
+    padding-bottom: 60px;
+
+    &Link {
+      color: var(--gray);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--hover-gray);
+      }
+    }
+  }
+
+  &Additional {
+    color: var(--gray);
+    display: flex;
+    justify-content: center;
+  }
 }
