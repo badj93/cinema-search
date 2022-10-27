@@ -1,4 +1,4 @@
-import { Link } from 'shared/ui';
+import { Link } from 'react-router-dom';
 import styles from './footer.module.scss';
 
 export const Footer = () => {

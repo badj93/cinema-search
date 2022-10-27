@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  font-family: 'RobotoLight';
+  padding-top: 24px;
+  position: sticky;
+  row-gap: 24px;
+  top: 0;
+  width: 200px;
+
+  &Link {
+    align-items: center;
+    column-gap: 8px;
+    display: flex;
+    color: var(--gray);
+
+    &Active {
+      color: var(--active-color-link);
+    }
+  }
+}

@@ -1,4 +1,5 @@
-import { Logo, InputSearch, Link, Button } from 'shared/ui';
+import { Link } from 'react-router-dom';
+import { Logo, InputSearch, Button } from 'shared/ui';
 import styles from './header.module.scss';
 
 export const Header = () => {

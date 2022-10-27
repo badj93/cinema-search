@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  width: 100%;
+
+  &Content {
+    border-left: 1px solid var(--light-gray);
+    height: 1000px;
+    padding-left: 16px;
+    padding-top: 24px;
+  }
+}
