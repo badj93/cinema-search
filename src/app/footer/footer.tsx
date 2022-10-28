@@ -3,33 +3,35 @@ import styles from './footer.module.scss';
 
 export const Footer = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.containerSocialNetworks}>
-        <i className={`pi pi-facebook ${styles.containerSocialNetworksIcon}`} />
-        <i
-          className={`pi pi-instagram ${styles.containerSocialNetworksIcon}`}
-        />
-        <i className={`pi pi-youtube ${styles.containerSocialNetworksIcon}`} />
-        <i className={`pi pi-twitter ${styles.containerSocialNetworksIcon}`} />
+    <footer className={styles.container}>
+      <div className={styles.content}>
+        <div className={styles.contentSocialNetworks}>
+          <i className={`pi pi-facebook ${styles.contentSocialNetworksIcon}`} />
+          <i
+            className={`pi pi-instagram ${styles.contentSocialNetworksIcon}`}
+          />
+          <i className={`pi pi-youtube ${styles.contentSocialNetworksIcon}`} />
+          <i className={`pi pi-twitter ${styles.contentSocialNetworksIcon}`} />
+        </div>
+        <div className={styles.contentNav}>
+          <Link className={styles.contentNavLink} to={'/'}>
+            Вакансии
+          </Link>
+          <Link className={styles.contentNavLink} to={'/'}>
+            Реклама
+          </Link>
+          <Link className={styles.contentNavLink} to={'/'}>
+            Соглашение
+          </Link>
+          <Link className={styles.contentNavLink} to={'/'}>
+            Блог
+          </Link>
+          <Link className={styles.contentNavLink} to={'/'}>
+            Служба поддержки
+          </Link>
+        </div>
+        <div className={styles.contentAdditional}>Дата создания 2022 год.</div>
       </div>
-      <div className={styles.containerNav}>
-        <Link className={styles.containerNavLink} to={'/'}>
-          Вакансии
-        </Link>
-        <Link className={styles.containerNavLink} to={'/'}>
-          Реклама
-        </Link>
-        <Link className={styles.containerNavLink} to={'/'}>
-          Соглашение
-        </Link>
-        <Link className={styles.containerNavLink} to={'/'}>
-          Блог
-        </Link>
-        <Link className={styles.containerNavLink} to={'/'}>
-          Служба поддержки
-        </Link>
-      </div>
-      <div className={styles.containerAdditional}>Дата создания 2022 год.</div>
-    </div>
+    </footer>
   );
 };

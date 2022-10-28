@@ -12,7 +12,7 @@ export const Navigation = () => {
 
   return (
     <div className={styles.container}>
-      <NavLink className={classNameHandler} to={'/'}>
+      <NavLink className={classNameHandler} to={'/'} end>
         <i className={'pi pi-home'} />
         <span>Главная</span>
       </NavLink>

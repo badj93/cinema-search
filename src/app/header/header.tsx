@@ -4,21 +4,23 @@ import styles from './header.module.scss';
 
 export const Header = () => {
   return (
-    <div className={styles.container}>
-      <Link to={'/'}>
-        <Logo />
-      </Link>
-      <InputSearch />
-      <div className={styles.containerRight}>
-        <Link to={'/favorite'}>
-          <i
-            className={`pi pi-bookmark-fill ${styles.containerRightFavorite}`}
-          />
+    <header className={styles.container}>
+      <div className={styles.content}>
+        <Link to={'/'}>
+          <Logo />
         </Link>
-        <Link to={'/auth'}>
-          <Button title={'Log in'} />
-        </Link>
+        <InputSearch />
+        <div className={styles.contentRight}>
+          <Link to={'/favorite'}>
+            <i
+              className={`pi pi-bookmark-fill ${styles.contentRightFavorite}`}
+            />
+          </Link>
+          <Link to={'/auth'}>
+            <Button title={'Log in'} />
+          </Link>
+        </div>
       </div>
-    </div>
+    </header>
   );
 };

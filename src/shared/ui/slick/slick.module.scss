@@ -1,0 +1,26 @@
+.prevArrow, .nextArrow {
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--light-gray);
+  background: var(--white);
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+
+  &Icon {
+    color: var(--gray);
+    margin-left: 10px;
+  }
+}
+
+.prevArrow {
+  left: -18px;
+}
+
+.nextArrow {
+  right: 0;
+}

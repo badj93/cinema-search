@@ -1,9 +1,17 @@
 .container {
+  display: flex;
+  justify-content: center;
   background: var(--black);
   font-family: 'RobotoLight';
   flex-shrink: 0;
   height: 276px;
+  width: 100%;
+}
+
+.content {
+  max-width: var(--max-width);
   padding: 0 var(--pd-left-cnt);
+  width: 100%;
 
   &SocialNetworks {
     display: flex;

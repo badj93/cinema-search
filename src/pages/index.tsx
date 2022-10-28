@@ -5,6 +5,9 @@ import { Main } from './main';
 
 const AuthPage = lazy(() => import('./auth'));
 const FavoritePage = lazy(() => import('./favorite'));
+const CinemaPage = lazy(() => import('./cinema'));
+const SeriesPage = lazy(() => import('./series'));
+const MediaPage = lazy(() => import('./media'));
 
 export const Routing = () => {
   return (
@@ -16,6 +19,9 @@ export const Routing = () => {
         path={'/favorite'}
         element={<FavoritePage />}
       />
+      <Route key={'cinema'} path={'/cinema'} element={<CinemaPage />} />
+      <Route key={'series'} path={'/series'} element={<SeriesPage />} />
+      <Route key={'media'} path={'/media'} element={<MediaPage />} />
     </Routes>
   );
 };
