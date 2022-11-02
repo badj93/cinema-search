@@ -7,17 +7,8 @@
 
 .main {
   background: var(--white);
-  display: flex;
   flex: 1;
   padding: 0 var(--pd-left-cnt);
   max-width: var(--max-width);
   width: 100%;
-
-  &Content {
-    border-left: 1px solid var(--light-gray);
-    padding-left: 24px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    width: calc(100% - 172px);
-  }
 }

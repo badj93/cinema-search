@@ -12,22 +12,24 @@ export const Navigation = () => {
 
   return (
     <div className={styles.container}>
-      <NavLink className={classNameHandler} to={'/'} end>
-        <i className={'pi pi-home'} />
-        <span>Главная</span>
-      </NavLink>
-      <NavLink className={classNameHandler} to={'/cinema'}>
-        <i className={'pi pi-caret-right'} />
-        <span>Фильмы</span>
-      </NavLink>
-      <NavLink className={classNameHandler} to={'/series'}>
-        <i className={'pi pi-images'} />
-        <span>Сериалы</span>
-      </NavLink>
-      <NavLink className={classNameHandler} to={'/media'}>
-        <i className={'pi pi-globe'} />
-        <span>Медиа</span>
-      </NavLink>
+      <div className={styles.content}>
+        <NavLink className={classNameHandler} to={'/'} end>
+          <i className={'pi pi-home'} />
+          <span>Главная</span>
+        </NavLink>
+        <NavLink className={classNameHandler} to={'/cinema'}>
+          <i className={'pi pi-caret-right'} />
+          <span>Фильмы</span>
+        </NavLink>
+        <NavLink className={classNameHandler} to={'/series'}>
+          <i className={'pi pi-images'} />
+          <span>Сериалы</span>
+        </NavLink>
+        <NavLink className={classNameHandler} to={'/media'}>
+          <i className={'pi pi-globe'} />
+          <span>Медиа</span>
+        </NavLink>
+      </div>
     </div>
   );
 };

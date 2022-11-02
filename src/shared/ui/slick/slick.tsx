@@ -28,7 +28,6 @@ export const Slick = (props: Settings) => {
   const settings = useMemo(
     () => ({
       ...props,
-      className: 'slick-test',
       prevArrow: (
         <CustomArrow
           customClassName={styles.prevArrow}

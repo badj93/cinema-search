@@ -1,13 +1,10 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  height: max-content;
   font-family: 'RobotoLight';
   padding-top: 24px;
   padding-right: 36px;
-  position: sticky;
-  row-gap: 24px;
-  top: 0;
+  position: absolute;
+  top: 72px;
+  height: 100%;
 
   &Link {
     align-items: center;
@@ -19,4 +16,13 @@
       color: var(--active-color-link);
     }
   }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  position: sticky;
+  row-gap: 24px;
+  top: 24px;
 }

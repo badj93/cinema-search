@@ -1,2 +1,14 @@
 .container {
+  display: block;
+}
+
+.content {
+  border-left: 1px solid var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-bottom: 40px;
+  margin-left: 130px;
+  padding-left: 24px;
+  padding-top: 24px;
 }

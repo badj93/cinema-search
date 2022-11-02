@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { FilmSlick } from 'entities/films-slick';
 
-export const Poster = () => {
+export const Popular = () => {
   const filmsMock = useMemo(
     () => [
       {
@@ -51,5 +51,5 @@ export const Poster = () => {
     [],
   );
 
-  return <FilmSlick title={'Now in cinema'} films={filmsMock} />;
+  return <FilmSlick title={'Most popular'} films={filmsMock} />;
 };
