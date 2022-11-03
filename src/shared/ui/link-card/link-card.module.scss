@@ -1,0 +1,25 @@
+.container {
+  color: var(--black);
+  display: block;
+  text-transform: uppercase;
+  height: 231px;
+  min-width: 140px;
+  max-width: 170px;
+  width: 100%;
+
+  &Content {
+    align-items: center;
+    background: var(--light-gray);
+    border-radius: var(--br-radius);
+    display: flex;
+    justify-content: center;
+    margin-right: 16px;
+    transition: .3s ease;
+    height: 100%;
+
+    &:hover {
+      background: var(--active-color-link);
+      color: var(--white);
+    }
+  }
+}

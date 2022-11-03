@@ -1,5 +1,6 @@
-import { useMemo } from 'react';
+import { useMemo, Children } from 'react';
 import Slider, { Settings, CustomArrowProps } from 'react-slick';
+import { LinkCard } from '../link-card';
 
 import styles from './slick.module.scss';
 
@@ -22,8 +23,12 @@ const CustomArrow = ({
   );
 };
 
-export const Slick = (props: Settings) => {
-  const { children } = props;
+interface SlickProps extends Settings {
+  isShowTotalCard?: boolean;
+}
+
+export const Slick = (props: SlickProps) => {
+  const { children, isShowTotalCard } = props;
 
   const settings = useMemo(
     () => ({
@@ -83,5 +88,12 @@ export const Slick = (props: Settings) => {
     [props],
   );
 
-  return <Slider {...settings}>{children}</Slider>;
+  return (
+    <Slider {...settings}>
+      {children}
+      {isShowTotalCard && (
+        <LinkCard to={'/'}>{Children.count(children)} total</LinkCard>
+      )}
+    </Slider>
+  );
 };

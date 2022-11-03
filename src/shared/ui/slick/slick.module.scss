@@ -19,8 +19,18 @@
 
 .prevArrow {
   left: -18px;
+  transition: .3s ease;
+
+  &:hover {
+    left: -21px;
+  }
 }
 
 .nextArrow {
   right: 0;
+  transition: .3s ease;
+
+  &:hover {
+    right: -3px;
+  }
 }
